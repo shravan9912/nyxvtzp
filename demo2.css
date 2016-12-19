@@ -1,4 +1,4 @@
-﻿
+
 /* ---------------- For sticky header: class="float-panel"  ------------------*/
 .float-panel {
     width:100%;background:white;z-index:300;padding:30px 0;transform: translateZ(0);
@@ -12,6 +12,7 @@
 .fixed .fa-gg {transform: rotate(360deg); }
 @keyframes slide-down {
     0% {
+    
         opacity: 0;
         transform: translateY(-100%);
     } 
