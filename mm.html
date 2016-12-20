@@ -6,6 +6,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
+ <title>Slide-in When Scrolling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="float-panel.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="demo2.css" rel="stylesheet" />
 <title>Agility a corporate Category Flat Bootstrap Responsive  Website Template | Home :: w3layouts</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -27,15 +32,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
-			
+			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
 </script>
-<!-- start=-smoth-scrolling -->
-<script src="float-panel.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="demo2.css" rel="stylesheet" />
+<!-- start-smoth-scrolling -->
 </head>
 <body>
 <!--header strat here-->
@@ -50,9 +52,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 	 <span class="menu"> <img src="images/icon.png" alt=""></span>	
 		      <nav class="cl-effect-1" id="cl-effect-1">		   		       											
 					<ul class="res">
-						<li><a href="" class="scroll">Home</a></li>
+					   <li><input type="url"> </li>
+						<li><a href=".//#" class="scroll">Home</a></li>
+						<li><a href="j" class="scroll">About</a></li>
 						<li><a href="#about" class="scroll">About</a></li>
-						<li><a href="#about2" class="scroll">About2</a></li>
 						<li><a href="#team" class="scroll">Team</a></li>
 						<li><a href="#services" class="scroll">Services</a></li>
 						<li><a href="#gallery" class="scroll">Gallery</a></li>	
@@ -95,41 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <h3>About</h3>
 			   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 			</div>
-			<div class="about-bottom-wl">
-				<div class="col-md-4 about-grid">
-					<div class="about-grid-main">
-						<img src="images/d1.png" alt="">
-						<h4>Creative Design</h4>
-						<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-					</div>
-				</div>
-				<div class="col-md-4 about-grid">
-					<div class="about-grid-main">
-						<img src="images/d2.png" alt="">
-						<h4>Excepteur sint</h4>
-						<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-					</div>
-				</div>
-				<div class="col-md-4 about-grid">
-					<div class="about-grid-main">
-						<img src="images/d3.png" alt="">
-						<h4>Lorem ipsum</h4>
-						<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-					</div>
-				</div>
-			  <div class="clearfix"> </div>
-			</div>			
-		</div>
-	</div>
-</div>
-<div class="about2-w3l" id="about">
-	<div class="container">
-		<div class="about2-main-w3l">
-			<div class="about2-top-w3l">
-			   <h3>About2</h3>
-			   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-			</div>
-			<div class="about2-bottom-wl">
+			<div class="about-bottom-w3l">
 				<div class="col-md-4 about-grid">
 					<div class="about-grid-main">
 						<img src="images/d1.png" alt="">
@@ -962,7 +931,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="footer-main">
 			<ul>
-				<li><a href="#" class="scroll active">Home</a></li>
+				<li><a href="" class="scroll active">Home</a></li>
 				<li><a href="#about" class="scroll">About</a></li>
 				<li><a href="#team" class="scroll">Team</a></li>
 				<li><a href="#services" class="scroll">Services</a></li>
